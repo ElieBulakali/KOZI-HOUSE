@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kozi House – Djalssa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="overlay">
+    <h1>KOZI HOUSE</h1>
+    <p>Là où l’élégance rencontre la gastronomie africaine</p>
+    <a href="#about" class="btn">Découvrir</a>
+  </div>
+</div>
+ 
+<!-- EXPERIENCE CULINAIRE-->
+<section id="about" class="split fade">
+  <div>
+    <h2>Une expérience culinaire unique</h2>
+    <p>Chaque plat est une fusion entre traditions africaines et techniques modernes.</p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80">
+</section>
+
+<!-- BAR -->
+<section class="dark fade">
+  <h2>Un bar signature</h2>
+  <p>Cocktails, café de spécialité et créations uniques.</p>
+</section>
+
+<!-- CIGAR  LOUNGE -->
+<section class="split fade">
+  <img src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?auto=format&fit=crop&w=800&q=80">
+  <div>
+    <h2>Le salon cigare</h2>
+    <p>Un espace intime, élégant et réservé aux amateurs.</p>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="dark fade">
+  <h2>Moments & Expériences</h2>
+  <div class="grid">
+    <div>🎤 Karaoke</div>
+    <div>🥞 Brunch</div>
+    <div>🎱 Billard</div>
+    <div>🎷 Live Music</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="fade">
+  <h2>Un design élégant</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80">
+    <img src="https://images.unsplash.com/photo-1541542684-4a6b72c5c0b4?auto=format&fit=crop&w=800&q=80">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <h2>Kozi House</h2>
+  <p>Plus qu’un restaurant. Une expérience.</p>
+</div>
+
+<script>
+
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
+
+</script>
+
+</body>
+</html>
